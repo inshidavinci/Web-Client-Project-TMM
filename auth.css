@@ -1,0 +1,185 @@
+/* ===== AUTH PAGES (login.php & register.php) ===== */
+
+.auth-wrapper {
+    min-height: calc(100vh - 70px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f0ee;
+    padding: 40px 16px;
+}
+
+.auth-card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.10);
+    padding: 48px 40px;
+    width: 100%;
+    max-width: 440px;
+}
+
+.auth-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #3b2a24;
+    margin: 0 0 6px 0;
+    text-align: center;
+}
+
+.auth-subtitle {
+    text-align: center;
+    color: #8a6f68;
+    margin: 0 0 28px 0;
+    font-size: 0.95rem;
+}
+
+/* Error & success banners */
+.auth-error,
+.auth-success {
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.auth-error {
+    background: #fdecea;
+    color: #b71c1c;
+    border: 1px solid #f5c6c6;
+}
+
+.auth-success {
+    background: #e8f5e9;
+    color: #2e7d32;
+    border: 1px solid #c8e6c9;
+}
+
+.auth-success a {
+    color: #2e7d32;
+    font-weight: 600;
+}
+
+/* Form fields */
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.auth-field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.auth-field label {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #3b2a24;
+}
+
+.auth-hint {
+    font-weight: 400;
+    color: #a08880;
+    font-size: 0.8rem;
+}
+
+.auth-field input {
+    padding: 12px 14px;
+    border: 1.5px solid #ddd;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    color: #3b2a24;
+    background: #faf8f7;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    outline: none;
+}
+
+.auth-field input:focus {
+    border-color: #BBA5A1;
+    box-shadow: 0 0 0 3px rgba(187, 165, 161, 0.2);
+    background: #fff;
+}
+
+.auth-field input::placeholder {
+    color: #c5b0aa;
+}
+
+/* Submit button — matches your .btn / hero-btn style */
+.auth-btn {
+    margin-top: 8px;
+    padding: 13px;
+    background-color: #BBA5A1;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+    letter-spacing: 0.02em;
+}
+
+.auth-btn:hover {
+    background-color: #a08880;
+}
+
+.auth-btn:active {
+    transform: scale(0.98);
+}
+
+/* Switch link (login ↔ register) */
+.auth-switch {
+    text-align: center;
+    margin-top: 22px;
+    font-size: 0.9rem;
+    color: #8a6f68;
+}
+
+.auth-switch a {
+    color: #BBA5A1;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.auth-switch a:hover {
+    text-decoration: underline;
+}
+
+/* ===== NAVBAR LOGOUT BUTTON ===== */
+.btn-logout {
+    background: none;
+    border: 2px solid #BBA5A1;
+    color: #BBA5A1;
+    padding: 6px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.btn-logout:hover {
+    background-color: #BBA5A1;
+    color: #fff;
+}
+
+.nav-user-greeting {
+    color: #3b2a24;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-right: 6px;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+    .auth-card {
+        padding: 32px 20px;
+    }
+
+    .auth-title {
+        font-size: 1.6rem;
+    }
+}
